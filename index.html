@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Apple Menu</title>
+	<meta charset="UTF-8">
+	<style>
+		/* Reset */
+		HTML,BODY,DIV,SPAN,APPLET,OBJECT,IFRAME,H1,H2,H3,H4,H5,H6,P,
+		BLOCKQUOTE,PRE,A,ABBR,ACRONYM,ADDRESS,BIG,CITE,CODE,DEL,DFN,
+		EM,FONT,IMG,INS,KBD,Q,S,SAMP,SMALL,STRIKE,STRONG,SUB,SUP,
+		TT,VAR,HR,B,U,I,CENTER,DL,DT,DD,OL,UL,LI,FIELDSET,FORM,
+		LABEL,LEGEND,TABLE,CAPTION,TBODY,TFOOT,THEAD,TR,TH,TD {
+			padding:0;
+			margin:0;
+			border:none;
+			outline:none;
+			vertical-align:baseline;
+			font-family:inherit;
+			font-size:100%;
+			}
+		DFN,I,CITE,VAR,ADDRESS,EM {
+			font-style:normal;
+			}
+		TH,B,STRONG,H1,H2,H3,H4,H5,H6{
+			font-weight:normal;
+			}
+		TEXTAREA,INPUT,SELECT{
+			font-family:inherit;
+			font-size:1em;
+			}
+		BLOCKQUOTE,Q {
+			quotes:none;
+			}
+		Q:before,Q:after,
+		BLOCKQUOTE:before,
+		BLOCKQUOTE:after {
+			content:'';
+			content:none;
+			}
+		OL,UL {
+			list-style:none;
+			}
+		INS {
+			text-decoration:none;
+			}
+		DEL {
+			text-decoration:line-through;
+			}
+		TABLE {
+			border-collapse:collapse;
+			border-spacing:0;
+			}
+		CAPTION,TH,TD {
+			text-align:left;
+			}
+
+		/* Globals */
+		BODY {
+			padding:100px 15%;
+			font:13px Helvetica, Arial, sans-serif;
+			}
+		
+		/* Section */
+		SECTION {
+			margin:auto;
+			width:840px;
+			}
+			SECTION FIGURE {
+				display:block;
+				margin:40px 0 0;
+				}
+
+		/* Menu */
+		UL {
+			overflow:hidden;
+			}
+			UL LI {
+				float:left;
+				margin-right:-1px;
+				width:119px;
+				line-height:1;
+				text-align:center;
+				background-color:#5E5E5E;
+				background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.1)));
+				background-image:-webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.1) 50%, transparent 50%, rgba(255, 255, 255, 0.1) 100%);
+				background-image:-moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.1) 50%, transparent 50%, rgba(255, 255, 255, 0.1) 100%);
+				background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.1) 50%, transparent 50%, rgba(255, 255, 255, 0.1) 100%);
+				background-image:
+					linear-gradient(
+						top,
+						rgba(255, 255, 255, 0.2) 0,
+						rgba(255, 255, 255, 0.1) 50%,
+						transparent 50%,
+						rgba(255, 255, 255, 0.1) 100%
+					);
+				border:1px solid #666;
+				-webkit-box-shadow:inset -1px 0 1px rgba(255, 255, 255, 0.2), inset 1px 0 1px rgba(255, 255, 255, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.2);
+				-moz-box-shadow:inset -1px 0 1px rgba(255, 255, 255, 0.2), inset 1px 0 1px rgba(255, 255, 255, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.2);
+				box-shadow:
+					inset -1px 0 1px rgba(255, 255, 255, 0.2),
+					inset 1px 0 1px rgba(255, 255, 255, 0.2),
+					inset 0 0 15px rgba(255, 255, 255, 0.2);
+				text-shadow:
+					0 2px 3px #333,
+					0 -1px 1px #333;
+				}
+			UL LI:hover {
+				background-color:#444;
+				background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, rgba(255, 255, 255, 0.1)), color-stop(0.5, rgba(255, 255, 255, 0.05)), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.05)));
+				background-image:-webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.05) 50%, transparent 50%, rgba(255, 255, 255, 0.05) 100%);
+				background-image:-moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.05) 50%, transparent 50%, rgba(255, 255, 255, 0.05) 100%);
+				background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.05) 50%, transparent 50%, rgba(255, 255, 255, 0.05) 100%);
+				background-image:
+					linear-gradient(
+						top,
+						rgba(255, 255, 255, 0.1) 0,
+						rgba(255, 255, 255, 0.05) 50%,
+						transparent 50%,
+						rgba(255, 255, 255, 0.05) 100%
+					);
+				}
+			UL LI:active {
+				background-color:#454545;
+				-webkit-box-shadow:inset 0 4px 8px rgba(0, 0, 0, 0.7);
+				-moz-box-shadow:inset 0 4px 8px rgba(0, 0, 0, 0.7);
+				box-shadow:
+					inset 0 4px 8px rgba(0, 0, 0, 0.7);
+				}
+			UL LI:first-child {
+				border-radius:5px 0 0 5px;
+				}
+			UL LI:last-child {
+				width:118px;
+				border-radius:0 5px 5px 0;
+				}
+				UL LI A {
+					display:block;
+					padding:12px 0 10px;
+					text-decoration:none;
+					color:#FFF;
+					}
+	</style>
+</head>
+<body>
+	<section>
+		<ul>
+			<li><a href="#">Store</a></li>
+			<li><a href="#">Mac</a></li>
+			<li><a href="#">iPod</a></li>
+			<li><a href="#">iPhone</a></li>
+			<li><a href="#">iPad</a></li>
+			<li><a href="#">iTunes</a></li>
+			<li><a href="#">Support</a></li>
+		</ul>
+		<figure>
+			<img src="images/legend.png" alt="CSS3 effects explained">
+		</figure>
+	</section>
+	<!-- Author: Vadim Makeev, http://pepelsbey.net/ -->
+</body>
+</html>
